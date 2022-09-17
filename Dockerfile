@@ -2,10 +2,14 @@ FROM node:16.17-alpine as build
 
 WORKDIR /app
 
-COPY ./packages ./packages
 COPY ./package.json pnpm-lock.yaml pnpm-workspace.yaml ./
+COPY ./packages/Beef/package.json ./packages/Beef/package.json 
+COPY ./packages/Pork/package.json ./packages/Pork/package.json 
+
 RUN npm install -g pnpm
 RUN pnpm install
+
+COPY ./packages ./packages
 RUN pnpm run -r build
 
 
