@@ -1,34 +1,39 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
+import { useState } from "react";
+import reactLogo from "./assets/react.svg";
+import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
+    <div>
+      <h1>Love Pork</h1>
+      <p>
+        Andouille frankfurter flank, meatloaf pork belly leberkas swine shoulder
+        pork beef. Tail short ribs ball tip tongue, ground round short loin
+        boudin. Turkey meatball kielbasa, ham bacon cupim beef ribs chislic
+        corned beef. Pork belly pancetta strip steak picanha tongue meatball
+        short ribs corned beef bresaola. Ham hock burgdoggen doner pig filet
+        mignon, brisket sausage chicken cow boudin cupim.
+      </p>
+      <p>
+        Strip steak spare ribs tenderloin tail, turkey capicola ball tip brisket
+        prosciutto alcatra bresaola pancetta. Shankle rump ham hock, landjaeger
+        capicola doner hamburger beef bacon cupim tongue kevin. Biltong doner
+        brisket, pastrami turkey filet mignon spare ribs flank meatloaf swine
+        andouille bacon landjaeger frankfurter. Meatball ribeye sirloin, kevin
+        tri-tip ball tip shoulder jowl beef ribs bresaola hamburger swine.
+      </p>
+      <p>
+        Turkey spare ribs sausage pig, pancetta kielbasa cupim. Turkey bacon
+        kevin meatball, rump hamburger andouille fatback pastrami pork loin
+        brisket prosciutto. Shankle jerky shoulder, pastrami filet mignon
+        alcatra ham burgdoggen. Chislic andouille capicola tri-tip pancetta beef
+        ribs. Alcatra picanha swine flank burgdoggen biltong pastrami
+        prosciutto, sausage meatball cupim buffalo strip steak beef chicken.
+        Boudin pork leberkas, strip steak t-bone jowl turkey pastrami buffalo
+        andouille.
       </p>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
