@@ -15,7 +15,7 @@ export const HomePage = () => {
       </div>
       <h1>I love Meat</h1>
       <div className="card">
-        <a href="/beef">
+        <a href="/pork">
           <p>Why I love Pork</p>
         </a>
 
